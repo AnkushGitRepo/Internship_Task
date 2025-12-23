@@ -28,7 +28,8 @@ if search_btn:
     
     # NCS
     try:
-        ncs = NCSScraper()
+        # Enforce headless=True for Streamlit Cloud compatibility
+        ncs = NCSScraper(headless=True)
         ncs_data = ncs.scrape(designation, location, experience)
         if not ncs_data:
              # Fallback to mock for demo if real scraping fails
