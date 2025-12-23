@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.log
+*.html
+*.png
+.DS_Store
+.env
+venv/
+output/
+secrets/
+*.xlsx
+.vscode/
